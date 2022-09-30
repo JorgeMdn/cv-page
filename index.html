@@ -12,17 +12,23 @@
       rel="stylesheet"
       href="./vendor/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
 
     <!-- GLOBAL STYLES -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/technologies.css" />
+    <link rel="stylesheet" href="./css/experience.css" />
+    <link rel="stylesheet" href="./css/contact_me.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/spinner.css" />
 
     <!-- LIGHT - THEME-->
@@ -31,33 +37,58 @@
     <link rel="stylesheet" href="./css/dark-theme.css" />
   </head>
 
-  <body id="body" class="light-theme">
+  <body id="body">
     <div class="progress" id="spinner">
       <div class="spinner-border"></div>
     </div>
 
-    <!-- NAV START -->
-    
-    <!-- NAV END -->
+    <!-- NAVBAR START -->
+    <header class="row nav px-4">
+      <div class="col-md-12 d-flex justify-content-end">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active">Inicio</li>
+          <li class="nav__item">¡Acerca de mí!</li>
+          <li class="nav__item">Portafolio</li>
+          <li class="nav__item">¡Contacta me!</li>
+        </ul>
+      </div>
+      <div class="nav__brand">JM</div>
+    </header>
+    <!-- NAVBAR END -->
 
-    <!-- BANNER START -->
+    <!-- START MAIN CONTAINER -->
+    <div class="container-fluid main px-0">
+      <!-- BANNER START -->
+      <div class="row">
+        <div class="col-md-12"></div>
+        <div class="col-md-12">
+          <h1>¡Hola soy Jorge Medina!</h1>
+        </div>
+      </div>
+      <!-- BANNER END -->
 
-    <!-- BANNER END -->
+      <!-- TECHNOLOGIES START -->
 
-    <!-- TECHNOLOGIES START -->
+      <!-- TECHNOLOGIES END -->
 
-    <!-- TECHNOLOGIES END -->
+      <!-- EXPERIENCE START -->
 
-    <!-- EXPERIENCE START -->
+      <!-- EXPERIENCE END -->
 
-    <!-- EXPERIENCE END -->
+      <!-- CONTACT_ME START -->
 
-    <!-- CONTACT_ME START -->
+      <!-- CONTACT_ME END -->
 
-    <!-- CONTACT_ME END -->
-
+      <!-- END MAIN CONTAINER -->
+    </div>
     <!-- FOOTER START -->
-    
+    <footer>
+      <div class="row p-4">
+        <div class="col-md-12">
+          <span>© 2022 Jorge Medina, Todos los derechos res</span>
+        </div>
+      </div>
+    </footer>
     <!-- FOOTER END -->
 
     <script
