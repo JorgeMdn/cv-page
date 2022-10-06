@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
   font-family: "Montserrat", "Arial", "san-serif";
   background: var(--primary-bg-dark);
+  color: var(--text-light);
 }
 
 a {
