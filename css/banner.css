@@ -1,7 +1,9 @@
 @import "./variables.css";
 
 .banner {
-  height: 90%;
+  height: 100vh;
+  margin-left: 95px;
+  position: relative;
 }
 
 .banner__icon {
@@ -93,13 +95,19 @@
 }
 /* BANNER__TYPING END */
 
-.banner_down {
+@keyframes banner__change_position {
+  50% {
+    bottom: -50px;
+  }
+}
+
+.banner_arrow-down {
+  cursor: pointer;
   width: 55px;
   height: 50px;
   padding: 10px;
-  margin: 80px;
-  position: relative;
-  left: 80px;
+  position: absolute;
+  bottom: -20px;
   background-color: var(--primary-main);
   color: white;
   font-weight: 600;
@@ -107,4 +115,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: top ease 4s;
+  animation-duration: 4s;
+  animation-name: banner__change_position;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }

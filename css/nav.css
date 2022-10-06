@@ -37,11 +37,11 @@
 }
 
 .nav__brand {
-  position: absolute;
+  position: relative;
   width: 55px;
   height: 50px;
   padding: 10px;
-  top: 20px;
+  top: -25px;
   left: 120px;
   background-color: var(--primary-main);
   color: white;
