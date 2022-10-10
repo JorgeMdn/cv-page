@@ -46,11 +46,14 @@
     <header class="row nav px-2" id="navbar">
       <div class="col-md-12 d-flex justify-content-end">
         <ul class="nav__list">
-          <div class="nav__menu d-flex justify-content-end py-0">
-            <button class="nav__menu-button">
+          <!--           <div class="nav__menu d-flex justify-content-end py-0">
+            <button class="nav__menu-button nav__menu--open">
+              <i class="fa fa-bars fa-lg"></i>
+            </button>
+            <button class="nav__menu-button nav__menu--close">
               <i class="fa fa-close fa-lg"></i>
             </button>
-          </div>
+          </div> -->
           <li class="nav__item">
             <a class="nav__link" href="#banner">Home</a>
           </li>
@@ -80,11 +83,8 @@
     <!-- START MAIN CONTAINER -->
     <div class="container-fluid main px-4">
       <!-- BANNER START -->
-      <div
-        class="row banner align-items-center justify-content-center"
-        id="banner"
-      >
-        <div class="col-md-12 row">
+      <div class="row banner pr-0" id="banner">
+        <div class="col-md-6 row">
           <div class="col-md-12 banner__media">
             <a
               href="https://www.linkedin.com/in/web-developer-jorge-medina/"
@@ -100,29 +100,35 @@
             </a>
           </div>
           <div class="col-md-12">
-            <h1 class="banner__title">¡Hi my name is Jorge Medina!</h1>
+            <h1 class="banner__title pt-4">¡Hi my name is Jorge Medina!</h1>
           </div>
-          <div class="col-md-12 pb-4">
+          <div class="col-md-12 pb-4 mb-4">
             <div class="banner__writter">
-              <div class="wrapper">
+              <div class="banner__wrapper">
                 <div class="banner__typing" id="bannerTyping">
                   Fullstack developer
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-12 banner__description">
             <p>
               This is my personal website, know a little about me, my experience
               and skills.
             </p>
           </div>
-        </div>
-
-        <div class="col-md-12 col-xs-0">
-          <div class="banner_arrow-down">
-            <i class="fa fa-arrow-down fa-lg"></i>
+          <div class="col-md-12 pt-4">
+            <a href="#about">
+              <div class="banner_arrow-down">
+                <i class="fa fa-arrow-down fa-lg"></i>
+              </div>
+            </a>
           </div>
+        </div>
+        <div
+          class="col-md-6 banner__img-content row align-items-center justify-content-center"
+        >
+          <div class="col-md-6 banner__img"></div>
         </div>
       </div>
       <!-- BANNER END -->
@@ -136,10 +142,32 @@
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-12">
-              <h2>¡Saludos!</h2>
+              <h2>Hi! I'm Jorge Medina</h2>
             </div>
             <div class="col-md-12">
-              <p>Hola soy un Jorge Medina</p>
+              <p>I'm Full Stack developer with a passion for web developer.</p>
+            </div>
+            <div class="col-md-12">
+              <p>
+                Hard-working with a flair creating elegant solution in the least
+                amount of time. Designed and developed websites, web
+                applications with scalable structure and good performance.
+              </p>
+              <div class="col-md-12 about__divider"></div>
+            </div>
+            <div class="col-md-12 py-4">
+              <button class="button__contained mr-2">
+                Contact me
+                <span class="d-inline-block pl-2"
+                  ><i class="fa fa-arrow-right fa-lg"></i
+                ></span>
+              </button>
+              <button class="button__outlined">
+                <span class="d-inline-block pr-2"
+                  ><i class="fa fa-download fa-lg"></i
+                ></span>
+                Download cv
+              </button>
             </div>
           </div>
         </div>
@@ -198,11 +226,25 @@
       <!-- END MAIN CONTAINER -->
     </div>
     <!-- FOOTER START -->
-    <footer>
-      <div class="row p-4">
-        <div class="col-md-12 d-flex align-items-center justify-content-center">
-          <span>Jorge Medina © 2022</span>
-        </div>
+    <footer class="footer row align-items-center justify-content-between p-2">
+      <div class="col-md-6">
+        <span>Jorge Medina © 2022</span>
+      </div>
+      <div
+        class="col-md-6 footer__media d-flex align-items-center justify-content-end"
+      >
+        <a
+          href="https://www.linkedin.com/in/web-developer-jorge-medina/"
+          target="_blank"
+        >
+          <i class="fa fa-linkedin-square fa-lg px-2"></i>
+        </a>
+        <a href="https://github.com/JorgeMdn/" target="_blank">
+          <i class="fa fa-github-square fa-lg px-2"></i>
+        </a>
+        <a href="https://twitter.com/jorge_mdn" target="_blank">
+          <i class="fa fa-twitter-square fa-lg px-2"></i>
+        </a>
       </div>
     </footer>
     <!-- FOOTER END -->

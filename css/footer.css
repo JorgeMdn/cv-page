@@ -1,7 +1,13 @@
 @import "variables.css";
 
 footer {
-  color: var(--text-light);
+  height: 40px;
+  /* max-height: 80px; */
+  background: var(--primary-bg-light);
+  color: var(--text-dark);
   font-weight: 600;
   font-size: 12px;
+}
+
+.footer__media {
 }
