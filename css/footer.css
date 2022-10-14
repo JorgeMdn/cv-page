@@ -1,13 +1,33 @@
 @import "variables.css";
 
 footer {
-  height: 40px;
+  min-height: 40px;
+  /* height: 40px; */
   /* max-height: 80px; */
   background: var(--primary-bg-light);
   color: var(--text-dark);
   font-weight: 600;
-  font-size: 12px;
+  font-size: 16px;
+  padding: 20px 10px;
 }
 
 .footer__media {
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer__icon:hover {
+  color: var(--primary-main);
+}
+
+@media (max-width: 676px) {
+  .footer__rights,
+  .footer__media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
 }

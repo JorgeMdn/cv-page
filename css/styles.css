@@ -55,6 +55,7 @@ h1 {
 
 button {
   padding: 10px 10px;
+  margin: 20px 0;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
@@ -94,5 +95,9 @@ button {
 @media (max-width: 676px) {
   .main {
     padding: 0px 10px;
+  }
+
+  .button {
+    width: 100%;
   }
 }

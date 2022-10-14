@@ -1,10 +1,32 @@
 .blast {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 20px;
+  font-size: 4rem;
+  line-height: 4rem;
   letter-spacing: -1px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .blast__item {
   display: inline-block;
+  animation-duration: 0.75s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  transition: color ease 0.5s;
+}
+
+.blast__item--space {
+  width: 10px;
+}
+
+.blast__item:hover {
+  animation-name: rubberBand;
+  color: var(--primary-main);
+}
+
+@media (max-width: 676px) {
+  .blast {
+    font-size: 3.5rem;
+    justify-content: center;
+  }
 }

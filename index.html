@@ -27,6 +27,7 @@
 
     <!-- GLOBAL STYLES -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/banner.css" />
     <link rel="stylesheet" href="./css/about.css" />
@@ -35,7 +36,6 @@
     <link rel="stylesheet" href="./css/contact_me.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/spinner.css" />
-    <link rel="stylesheet" href="./css/animations.css" />
   </head>
 
   <body id="body">
@@ -85,7 +85,7 @@
     <div class="container-fluid main">
       <!-- BANNER START -->
       <div class="row banner pr-0" id="banner">
-        <div class="col-md-6 row">
+        <div class="col-md-6 row px-0">
           <div class="col-md-12 banner__media">
             <a
               href="https://www.linkedin.com/in/web-developer-jorge-medina/"
@@ -128,7 +128,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-6"></div>
+        <div class="col-md-6 px-0"></div>
       </div>
       <!-- BANNER END -->
 
@@ -172,16 +172,16 @@
               </div>
             </div>
           </div>
-          <div class="col-md-12 py-4">
+          <div class="col-md-12 py-2 px-0">
             <a href="#contact_me">
-              <button class="button__contained mr-2">
+              <button class="button button__contained mr-2">
                 Contact me
                 <span class="d-inline-block pl-2"
                   ><i class="fa fa-arrow-right fa-lg"></i
                 ></span>
               </button>
             </a>
-            <button class="button__outlined">
+            <button class="button button__outlined">
               <span class="d-inline-block pr-2"
                 ><i class="fa fa-download fa-lg"></i
               ></span>
@@ -195,16 +195,19 @@
       <!-- TECHNOLOGIES START -->
       <section class="row skills" id="skills">
         <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-6">
-              <h2 class="blast" aria-label="Skills & Experience">
+          <div class="row align-items-center">
+            <div class="col-md-12">
+              <h2 class="blast pb-0" aria-label="Skills & Experience">
                 <span class="blast__item">S</span>
                 <span class="blast__item">k</span>
                 <span class="blast__item">i</span>
                 <span class="blast__item">l</span>
                 <span class="blast__item">l</span>
-                <span class="blast__item">s</span>
+                <span class="blast__item">s </span>
+                <span class="blast__item--space"></span>
                 <span class="blast__item">&</span>
+              </h2>
+              <h2 class="blast" aria-label="Skills & Experience">
                 <span class="blast__item">E</span>
                 <span class="blast__item">x</span>
                 <span class="blast__item">p</span>
@@ -274,7 +277,7 @@
       <!-- PORTFOLIO END -->
 
       <!-- CONTACT_ME START -->
-      <section class="row experience" id="contact_me">
+      <section class="row contact_me" id="contact_me">
         <div class="col-md-12">
           <h2 class="text-center">Contact me</h2>
         </div>
@@ -286,24 +289,22 @@
       <!-- END MAIN CONTAINER -->
     </div>
     <!-- FOOTER START -->
-    <footer class="footer row align-items-center justify-content-between p-2">
-      <div class="col-md-6">
+    <footer class="footer row align-items-center justify-content-between">
+      <div class="col-md-6 footer__rights">
         <span>Jorge Medina © 2022</span>
       </div>
-      <div
-        class="col-md-6 footer__media d-flex align-items-center justify-content-end"
-      >
+      <div class="col-md-6 footer__media">
         <a
           href="https://www.linkedin.com/in/web-developer-jorge-medina/"
           target="_blank"
         >
-          <i class="fa fa-linkedin-square fa-lg px-2"></i>
+          <i class="fa fa-linkedin-square fa-lg px-2 footer__icon"></i>
         </a>
         <a href="https://github.com/JorgeMdn/" target="_blank">
-          <i class="fa fa-github-square fa-lg px-2"></i>
+          <i class="fa fa-github-square fa-lg px-2 footer__icon"></i>
         </a>
         <a href="https://twitter.com/jorge_mdn" target="_blank">
-          <i class="fa fa-twitter-square fa-lg px-2"></i>
+          <i class="fa fa-twitter-square fa-lg px-2 footer__icon"></i>
         </a>
       </div>
     </footer>
