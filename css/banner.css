@@ -1,16 +1,17 @@
 @import "./variables.css";
 
 .banner {
-  height: 100vh;
   width: 100%;
+  height: 100vh;
   padding-left: 50px;
+  margin: 0;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../assets/images/test.png");
+  background-image: url("../assets/images/banner_bg.png");
   background-size: cover;
-  background-position-y: center;
+  background-position-y: top;
   background-position-x: right;
 }
 
@@ -19,7 +20,7 @@
   color: var(--text-light);
   top: 0;
   transition: top ease 0.5s;
-  font-size: 25px;
+  font-size: 35px;
   padding-right: 20px;
 }
 
@@ -31,6 +32,18 @@
 .banner__title {
   color: var(--text-light);
   width: 100%;
+  font-size: 42px;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.banner__title:hover {
+  animation-name: rubberBand;
+}
+
+.banner__name {
+  color: var(--primary-main);
 }
 
 .banner__description {
@@ -112,7 +125,7 @@
 
 /* BANNER__TYPING END */
 
-.banner_arrow-down {
+.banner_arrow-icon {
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -133,39 +146,12 @@
   animation-direction: alternate;
 }
 
-.banner_arrow-down:hover {
+.banner_arrow-icon:hover {
   background: var(--primary-light);
   color: var(--primary-main);
   transition: background ease 0.5s;
 }
 
-.banner__img-content {
-  width: 100%;
-  height: 100%;
-  padding-top: 80px;
-}
-
-.banner__img {
-  width: 100%;
-  height: 100%;
-}
-
-/* .banner__img:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(
-    local,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 1) 69%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
 @media (max-width: 768px) {
   .banner {
     padding-left: 0;
@@ -178,6 +164,10 @@
 }
 
 @media (max-width: 676px) {
+  .banner {
+    align-items: center;
+  }
+
   .banner__media {
     display: flex;
     justify-content: center;
@@ -193,12 +183,25 @@
     text-align: center;
   }
 
+  .banner__typing {
+    font-size: 16px;
+    text-align: center;
+  }
+
   .banner__writter {
     justify-content: center;
   }
 
   .banner__wrapper {
     width: 100%;
+  }
+
+  .banner__description {
+    text-align: center;
+  }
+
+  .banner_arrow-icon {
+    left: 45%;
   }
 }
 

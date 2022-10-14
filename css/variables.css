@@ -1,18 +1,17 @@
 :root {
-  --primary-bg: #f5f5f5;
   --primary-bg-light: white;
   --primary-bg-dark: #010312;
   --primary-main: #f26c4f;
   --primary-light: white;
   --secondary-main: #010312;
-  --secondary-light: white;
+  /* --secondary-light: white;
   --secondary-light: white;
   --info-main: white;
   --info-light: white;
   --danger-main: white;
   --danger-light: white;
   --warning-main: white;
-  --warning-light: white;
+  --warning-light: white; */
   --text-light: white;
   --text-dark: #010312;
 }

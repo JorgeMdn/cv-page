@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="./css/contact_me.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/spinner.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
   </head>
 
   <body id="body">
@@ -81,7 +82,7 @@
     <!-- NAVBAR END -->
 
     <!-- START MAIN CONTAINER -->
-    <div class="container-fluid main px-4">
+    <div class="container-fluid main">
       <!-- BANNER START -->
       <div class="row banner pr-0" id="banner">
         <div class="col-md-6 row">
@@ -100,7 +101,9 @@
             </a>
           </div>
           <div class="col-md-12">
-            <h1 class="banner__title pt-4">¡Hi my name is Jorge Medina!</h1>
+            <h1 class="banner__title pt-4">
+              ¡Hi my name is <span class="banner__name">Jorge Medina!</span>
+            </h1>
           </div>
           <div class="col-md-12 pb-4 mb-4">
             <div class="banner__writter">
@@ -119,17 +122,13 @@
           </div>
           <div class="col-md-12 pt-4">
             <a href="#about">
-              <div class="banner_arrow-down">
+              <div class="banner_arrow-icon">
                 <i class="fa fa-arrow-down fa-lg"></i>
               </div>
             </a>
           </div>
         </div>
-        <div
-          class="col-md-6 banner__img-content row align-items-center justify-content-center"
-        >
-          <div class="col-md-6 banner__img"></div>
-        </div>
+        <div class="col-md-6"></div>
       </div>
       <!-- BANNER END -->
 
@@ -153,22 +152,41 @@
                 amount of time. Designed and developed websites, web
                 applications with scalable structure and good performance.
               </p>
-              <div class="col-md-12 about__divider"></div>
             </div>
-            <div class="col-md-12 py-4">
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-6 metric">
+                  <div class="metric__total">3</div>
+                </div>
+                <div class="col-md-6"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 px-4">
+              <div class="row px-2">
+                <div class="col-md-12 about__divider"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 py-4">
+            <a href="#contact_me">
               <button class="button__contained mr-2">
                 Contact me
                 <span class="d-inline-block pl-2"
                   ><i class="fa fa-arrow-right fa-lg"></i
                 ></span>
               </button>
-              <button class="button__outlined">
-                <span class="d-inline-block pr-2"
-                  ><i class="fa fa-download fa-lg"></i
-                ></span>
-                Download cv
-              </button>
-            </div>
+            </a>
+            <button class="button__outlined">
+              <span class="d-inline-block pr-2"
+                ><i class="fa fa-download fa-lg"></i
+              ></span>
+              Download cv
+            </button>
           </div>
         </div>
       </section>
@@ -176,10 +194,31 @@
 
       <!-- TECHNOLOGIES START -->
       <section class="row skills" id="skills">
-        <div class="col-md-12">
-          <h2 class="text-center">Skills</h2>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="blast" aria-label="Skills & Experience">
+                <span class="blast__item">S</span>
+                <span class="blast__item">k</span>
+                <span class="blast__item">i</span>
+                <span class="blast__item">l</span>
+                <span class="blast__item">l</span>
+                <span class="blast__item">s</span>
+                <span class="blast__item">&</span>
+                <span class="blast__item">E</span>
+                <span class="blast__item">x</span>
+                <span class="blast__item">p</span>
+                <span class="blast__item">e</span>
+                <span class="blast__item">r</span>
+                <span class="blast__item">i</span>
+                <span class="blast__item">e</span>
+                <span class="blast__item">n</span>
+                <span class="blast__item">c</span>
+                <span class="blast__item">e</span>
+              </h2>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6"></div>
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-12">
@@ -199,7 +238,28 @@
           <h2 class="text-center">Experience</h2>
         </div>
         <div class="col-md-6"></div>
-        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <p>
+            Since beginning my journey as a web developer nearly 3 years ago,
+            I've done remote work for agencies and startups, and collaborated
+            with talend people to create products for both business and consumer
+            use.
+          </p>
+          <p>
+            I create successfull responsive websites that are fast, easy to use,
+            and built with best practices. The main area of my expertise is
+            frontend development, HTML, CSS, JS, building small and medium web
+            apps.
+          </p>
+          <p>
+            I also have full-stack developer experience with NODEJS, PHP using
+            frameworks like NestJS, Codeigniter and .NET CORE.
+          </p>
+          <p>
+            Visit my LinkedIn profile form more details or just
+            <a href="#contact_me">contact</a> me.
+          </p>
+        </div>
       </section>
       <!-- EXPERIENCE END -->
 

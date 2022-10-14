@@ -8,7 +8,7 @@
   z-index: 2;
   background: transparent;
   color: var(--text-light);
-  transition: background ease 1s;
+  transition: background ease 0.75s;
 }
 
 .nav--scrolled {
@@ -24,7 +24,7 @@
   display: flex;
   margin: 0;
   text-shadow: 1px 1px var(--secondary-main);
-  transition: text-shadow ease 1s;
+  transition: text-shadow ease 0.75s;
 }
 
 .nav__menu {
@@ -75,7 +75,7 @@
   position: absolute;
   padding: 10px;
   top: 10px;
-  left: 134px;
+  left: 115px;
   background-color: var(--primary-main);
   color: white;
   font-weight: 600;

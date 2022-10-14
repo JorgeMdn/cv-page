@@ -1,0 +1,10 @@
+.blast {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 20px;
+  letter-spacing: -1px;
+}
+
+.blast__item {
+  display: inline-block;
+}
