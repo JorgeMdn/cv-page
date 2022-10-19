@@ -1,3 +1,43 @@
 .contact_me {
   height: 90vh;
 }
+
+.form__group {
+  padding: 10px;
+}
+
+.form__group label {
+  display: inline-block;
+  font-weight: 600;
+  width: 100%;
+}
+
+.form__group input {
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  background: var(--secondary-light);
+  border: none;
+  height: 40px;
+  color: var(--text-light);
+  border-radius: 8px;
+  font-size: 14px;
+}
+.form__group input::placeholder {
+  color: var(--text-light);
+}
+
+.form__group textarea {
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  background: var(--secondary-light);
+  border: none;
+  color: var(--text-light);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form__group textarea::placeholder {
+  color: var(--text-light);
+}

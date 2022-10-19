@@ -3,11 +3,9 @@
 .banner {
   width: 100%;
   height: 100vh;
-  padding-left: 50px;
   margin: 0;
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
   background-image: url("../assets/images/banner_bg.png");
   background-size: cover;
@@ -32,13 +30,12 @@
 .banner__title {
   color: var(--text-light);
   width: 100%;
-  font-size: 42px;
+  font-size: 48px;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
 }
-
-.banner__title:hover {
+.banner__title--animation {
   animation-name: rubberBand;
 }
 
@@ -48,6 +45,7 @@
 
 .banner__description {
   color: var(--text-light);
+  font-size: 24px;
   font-weight: 600;
   text-shadow: 1px 1px var(--secondary-main);
 }
@@ -154,7 +152,6 @@
 
 @media (max-width: 768px) {
   .banner {
-    padding-left: 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;

@@ -1,3 +1,48 @@
 .about__divider {
   border-bottom: 1px solid var(--primary-light);
 }
+
+.metric {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.metric__total {
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary-main);
+}
+
+.metric__title {
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__actions {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 676px) {
+  .metric__item {
+    padding-bottom: 20px;
+  }
+
+  .metric__total {
+    font-size: 46px;
+  }
+
+  .metric__title {
+    font-size: 36px;
+  }
+}

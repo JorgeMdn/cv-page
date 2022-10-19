@@ -10,18 +10,44 @@
 .blast__item {
   display: inline-block;
   animation-duration: 0.75s;
-  animation-fill-mode: both;
   animation-iteration-count: 1;
+  animation-fill-mode: both;
   transition: color ease 0.5s;
+  color: var(--primary-main);
 }
 
 .blast__item--space {
   width: 10px;
 }
 
-.blast__item:hover {
+.blast__item--animation {
   animation-name: rubberBand;
-  color: var(--primary-main);
+  color: var(--text-light);
+}
+
+.skills__description {
+  font-weight: 500;
+}
+
+.job__content {
+  background: var(--secondary-light);
+  padding: 20px;
+  border-radius: 16px;
+  margin: 10px 0;
+}
+
+.job__title {
+  font-weight: 700;
+}
+
+.job__business {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.job__date {
+  text-transform: uppercase;
+  font-size: 10px;
 }
 
 @media (max-width: 676px) {

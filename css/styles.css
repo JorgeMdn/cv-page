@@ -49,6 +49,11 @@ h6 {
   padding: 0 0 24px 0;
 }
 
+input,
+textarea {
+  font-family: "Montserrat", "Arial", "san-serif";
+}
+
 h1 {
   font-size: 36px;
 }
@@ -84,7 +89,7 @@ button {
 
 .button__outlined:hover {
   background: var(--primary-bg-light);
-  color: var(--primary-main);
+  color: var(--secondary-light);
 }
 
 .main {
@@ -92,9 +97,21 @@ button {
   padding: 0px 20px;
 }
 
+.text__primary {
+  cursor: pointer;
+  color: var(--primary-main);
+}
+.text__primary:hover {
+  color: var(--primary-dark);
+}
+
 @media (max-width: 676px) {
   .main {
     padding: 0px 10px;
+  }
+
+  section {
+    height: 100%;
   }
 
   .button {
