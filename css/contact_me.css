@@ -3,7 +3,7 @@
 }
 
 .form__group {
-  padding: 10px;
+  padding-top: 20px;
 }
 
 .form__group label {
@@ -23,12 +23,23 @@
   border-radius: 8px;
   font-size: 14px;
 }
+
+.form__group input:focus,
+textarea:focus {
+  /* outline: 1px solid var(--text-light); */
+  outline: none !important;
+  border-color: var(--text-light);
+  box-shadow: 0 0 10px var(--text-light);
+}
+
 .form__group input::placeholder {
   color: var(--text-light);
 }
 
 .form__group textarea {
+  resize: none;
   margin: 10px 0;
+  max-width: 100%;
   width: 100%;
   padding: 10px;
   background: var(--secondary-light);
@@ -40,4 +51,19 @@
 
 .form__group textarea::placeholder {
   color: var(--text-light);
+}
+
+.form__message {
+  display: none;
+  width: 100%;
+  transition: display ease-in-out 1s;
+}
+.form__message--show {
+  display: block;
+}
+
+@media (max-width: 667px) {
+  .contact_me {
+    height: 100vh;
+  }
 }

@@ -90,13 +90,22 @@
             <a
               href="https://www.linkedin.com/in/web-developer-jorge-medina/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i class="fa fa-linkedin-square fa-lg banner__icon"></i>
             </a>
-            <a href="https://github.com/JorgeMdn/" target="_blank">
+            <a
+              href="https://github.com/JorgeMdn/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i class="fa fa-github-square fa-lg banner__icon"></i>
             </a>
-            <a href="https://twitter.com/jorge_mdn" target="_blank">
+            <a
+              href="https://twitter.com/jorge_mdn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i class="fa fa-twitter-square fa-lg banner__icon"></i>
             </a>
           </div>
@@ -137,7 +146,7 @@
         <div class="col-md-6 d-flex align-items-center">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="blast pb-0" aria-label="Skills & Experience">
+              <h2 class="blast pb-0" aria-label="About me">
                 <span class="blast__item">A</span>
                 <span class="blast__item">b</span>
                 <span class="blast__item">o</span>
@@ -147,6 +156,15 @@
                 <span class="blast__item">m</span>
                 <span class="blast__item">e</span>
               </h2>
+            </div>
+            <div class="col-md-12">
+              <div class="about__img-content">
+                <img
+                  class="about__img"
+                  src="./assets/images/jorge__about.jpg"
+                  alt="Jorge Medina"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -201,16 +219,17 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-12 about__actions py-2 px-0">
-                <a href="#contact_me">
-                  <button class="button button__contained mr-2">
-                    Contact me
-                    <span class="d-inline-block pl-2"
-                      ><i class="fa fa-arrow-right fa-lg"></i
-                    ></span>
-                  </button>
-                </a>
-                <button class="button button__outlined">
+              <div class="col-md-12 about__actions">
+                <button
+                  class="button button__contained about__contact-me mr-2"
+                  onclick="goToSection('contact_me')"
+                >
+                  Contact me
+                  <span class="d-inline-block pl-2"
+                    ><i class="fa fa-arrow-right fa-lg"></i
+                  ></span>
+                </button>
+                <button class="button button__outlined" onclick="downloadCV()">
                   <span class="d-inline-block pr-2"
                     ><i class="fa fa-download fa-lg"></i
                   ></span>
@@ -273,40 +292,87 @@
                   <p>
                     Visit my
                     <a
-                      class="text__primary"
+                      class="skills__link"
                       href="https://www.linkedin.com/in/web-developer-jorge-medina/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       LinkedIn
                     </a>
                     profile form more details or just
-                    <a class="text__primary" href="#contact_me">contact</a> me.
+                    <a class="skills__link" href="#contact_me">contact</a> me.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 d-flex align-items-center">
-          <div class="row justify-content-between">
-            <div class="col-md-5 job__content">
-              <div class="  ">
-                <div class="job__title">
-                  <h4>Full stack Developer</h4>
+        <div class="col-md-6">
+          <div class="row skills__info align-items-center">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-12 skills__content">
+                  <div class="skills__item">
+                    <span>Front-end</span>
+                    <div class="skills__bar">
+                      <div class="skills__fill skills__fill--frontend"></div>
+                    </div>
+                  </div>
+                  <div class="skills__item">
+                    <span>Back-end</span>
+                    <div class="skills__bar">
+                      <div class="skills__fill skills__fill--backend"></div>
+                    </div>
+                  </div>
+                  <div class="skills__item">
+                    <span>Angular</span>
+                    <div class="skills__bar">
+                      <div class="skills__fill skills__fill--angular"></div>
+                    </div>
+                  </div>
+                  <div class="skills__item">
+                    <span>ReactJS</span>
+                    <div class="skills__bar">
+                      <div class="skills__fill skills__fill--react"></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="job__business">Desarrollos Tecnológicos</div>
-                <div class="job__date">2022-2021</div>
-                <div class="job__description"></div>
-              </div>
-            </div>
-            <div class="col-md-5 job__content">
-              <div class="job__item">
-                <div class="job__title">
-                  <h4>Frontend Developer</h4>
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="job__content">
+                        <div class="job__item">
+                          <div class="job__title">
+                            <h4>Frontend Developer</h4>
+                          </div>
+                          <div class="job__business">Ectotec</div>
+                          <div class="job__date">2021 - now</div>
+                          <p class="job__description">
+                            Frontend team leader. Development, organization and
+                            implementation of web platforms and websites.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="job__content">
+                        <div class="job__item">
+                          <div class="job__title">
+                            <h4>Full stack Developer</h4>
+                          </div>
+                          <div class="job__business">
+                            Desarrollos Tecnológicos
+                          </div>
+                          <div class="job__date">2022 - 2021</div>
+                          <p class="job__description">
+                            Full Stack developer. Development and implementation
+                            of web platforms and mobile application development.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="job__business">Ectotec</div>
-                <div class="job__date">2021-now</div>
-                <div class="job__description"></div>
               </div>
             </div>
           </div>
@@ -350,49 +416,67 @@
               <h2>Send me a message!</h2>
             </div>
             <div class="col-md-12">
-              <div class="row">
+              <form class="row" novalidate>
                 <div class="col-md-6 form__group">
                   <label for="name">Name *</label>
                   <input
                     type="text"
                     name="name"
-                    id="name"
+                    id="nameTxt"
+                    required
                     placeholder="Write your name..."
                   />
+                  <span class="form__message" id="nameRequireMsj"
+                    >The field is required</span
+                  >
                 </div>
                 <div class="col-md-6 form__group">
                   <label for="email">Email *</label>
                   <input
                     type="email"
                     name="email"
-                    id="email"
+                    id="emailTxt"
+                    required
                     placeholder=" Write your email..."
                   />
+                  <span class="form__message" id="emailRequireMsj"
+                    >The field is required</span
+                  >
+                  <span class="form__message" id="emailValidMsj"
+                    >Please write a valid email</span
+                  >
                 </div>
                 <div class="col-md-12 form__group">
                   <label for="subject">Subject *</label>
                   <input
                     type="text"
                     name="subject"
-                    id="subject"
+                    id="subjectTxt"
+                    required
                     placeholder=" Write a subject..."
                   />
+                  <span class="form__message" id="subjectRequireMsj"
+                    >The field is required</span
+                  >
                 </div>
                 <div class="col-md-12 form__group">
-                  <label for="message">Message *</label>
+                  <label for="message">Message</label>
                   <textarea
                     name="message"
-                    id="message"
+                    id="messageTxt"
                     rows="6"
                     placeholder="Write a message..."
                   ></textarea>
+                  <span class="form__message" id="messageRequireMsj"
+                    >The field is required</span
+                  >
                 </div>
                 <div class="col-md-12 d-flex justify-content-end pb-4">
-                  <button class="button button__contained mr-2">
+                  <button class="button button__contained" type="submit">
                     Send message!
                   </button>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
@@ -410,13 +494,22 @@
         <a
           href="https://www.linkedin.com/in/web-developer-jorge-medina/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <i class="fa fa-linkedin-square fa-lg px-2 footer__icon"></i>
         </a>
-        <a href="https://github.com/JorgeMdn/" target="_blank">
+        <a
+          href="https://github.com/JorgeMdn/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i class="fa fa-github-square fa-lg px-2 footer__icon"></i>
         </a>
-        <a href="https://twitter.com/jorge_mdn" target="_blank">
+        <a
+          href="https://twitter.com/jorge_mdn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i class="fa fa-twitter-square fa-lg px-2 footer__icon"></i>
         </a>
       </div>
@@ -445,6 +538,7 @@
     <script src="./js/events.js"></script>
     <script src="./js/rubber_band.js"></script>
     <script src="./js/type_writter.js"></script>
+    <script src="./js/download-file.js"></script>
     <script src="./js/main.js"></script>
     <!-- Start of HubSpot Embed Code -->
     <!--     <script

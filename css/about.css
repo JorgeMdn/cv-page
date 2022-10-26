@@ -31,6 +31,28 @@
 .about__actions {
   display: flex;
   justify-content: center;
+  padding: 10px 0px;
+}
+
+.about__img-content {
+  width: 300px;
+  height: 300px;
+  background: #df462783;
+  z-index: 2;
+  overflow: hidden;
+}
+.about__img {
+  padding: 20px 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.about__img:after {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  border-top: 1px solid var(--primary-main);
 }
 
 @media (max-width: 676px) {
@@ -44,5 +66,14 @@
 
   .metric__title {
     font-size: 36px;
+  }
+
+  .about__actions {
+    display: block;
+    padding: 0px;
+  }
+
+  .about__contact-me {
+    margin-bottom: 0px;
   }
 }

@@ -79,6 +79,11 @@ button {
   color: var(--primary-main);
 }
 
+.button__contained--disabled {
+  background: var(--primary-bg-light);
+  color: var(--primary-main);
+}
+
 .button__outlined {
   background: transparent;
   color: var(--text-light);
@@ -101,13 +106,14 @@ button {
   cursor: pointer;
   color: var(--primary-main);
 }
+
 .text__primary:hover {
   color: var(--primary-dark);
 }
 
 @media (max-width: 676px) {
   .main {
-    padding: 0px 10px;
+    padding: 0px 10px 80px 10px;
   }
 
   section {
@@ -116,5 +122,15 @@ button {
 
   .button {
     width: 100%;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
   }
 }
