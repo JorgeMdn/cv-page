@@ -4,8 +4,8 @@ footer {
   min-height: 40px;
   /* height: 40px; */
   /* max-height: 80px; */
-  background: var(--primary-bg-light);
-  color: var(--text-dark);
+  background: var(--primary-light);
+  color: var(--text-light);
   font-weight: 600;
   font-size: 16px;
   padding: 20px 10px;
@@ -22,7 +22,7 @@ footer {
   color: var(--primary-main);
 }
 
-@media (max-width: 676px) {
+@media (max-width: 768px) {
   .footer__rights,
   .footer__media {
     display: flex;

@@ -7,10 +7,13 @@
   position: relative;
   display: flex;
   align-items: center;
-  background-image: url("../assets/images/banner_bg.png");
-  background-size: cover;
-  background-position-y: top;
-  background-position-x: right;
+  justify-content: center;
+}
+
+.banner__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner__icon {
@@ -19,7 +22,7 @@
   top: 0;
   transition: top ease 0.5s;
   font-size: 35px;
-  padding-right: 20px;
+  padding: 0px 10px;
 }
 
 .banner__icon:hover {
@@ -28,9 +31,10 @@
 }
 
 .banner__title {
-  color: var(--text-light);
   width: 100%;
   font-size: 48px;
+  text-align: center;
+  color: var(--text-light);
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
@@ -47,14 +51,14 @@
   color: var(--text-light);
   font-size: 24px;
   font-weight: 600;
-  text-shadow: 1px 1px var(--secondary-main);
+  text-align: center;
 }
 
 /* BANNER__TYPING START */
 
 .banner__writter {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .banner__wrapper {
@@ -123,13 +127,18 @@
 
 /* BANNER__TYPING END */
 
+.banner_arrow {
+  display: flex;
+  justify-content: center;
+}
+
 .banner_arrow-icon {
   cursor: pointer;
   width: 50px;
   height: 50px;
   padding: 10px;
-  position: absolute;
-  bottom: -20px;
+  position: relative;
+  bottom: 0;
   background: var(--primary-main);
   color: white;
   font-weight: 600;
@@ -146,7 +155,7 @@
 
 .banner_arrow-icon:hover {
   background: var(--primary-light);
-  color: var(--primary-main);
+  color: var(--secondary-main);
   transition: background ease 0.5s;
 }
 
@@ -154,23 +163,13 @@
   .banner {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding-top: 90px;
-    background-image: none;
+    align-items: center;
+    height: 100%;
+    margin-top: 60px;
   }
 }
 
-@media (max-width: 676px) {
-  .banner {
-    align-items: center;
-  }
-
-  .banner__media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
+@media (max-width: 768px) {
   .banner__icon {
     font-size: 30px;
   }
@@ -182,6 +181,7 @@
 
   .banner__typing {
     font-size: 16px;
+    font-weight: 600;
     text-align: center;
   }
 
@@ -196,10 +196,6 @@
   .banner__description {
     text-align: center;
   }
-
-  .banner_arrow-icon {
-    left: 45%;
-  }
 }
 
 @keyframes caret {
@@ -210,6 +206,6 @@
 
 @keyframes banner__change_position {
   50% {
-    bottom: -50px;
+    bottom: -30px;
   }
 }

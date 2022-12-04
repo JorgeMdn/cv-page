@@ -34,8 +34,8 @@ ul {
 
 section {
   margin: 0;
-  height: 100vh;
-  padding-top: 60px;
+  min-height: 100vh;
+  padding-top: 20px;
 }
 
 p,
@@ -46,7 +46,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  padding: 0 0 24px 0;
+  padding: 0 0 20px 0;
 }
 
 input,
@@ -59,29 +59,29 @@ h1 {
 }
 
 button {
-  padding: 10px 10px;
+  padding: 10px 20px;
   margin: 20px 0;
-  text-transform: uppercase;
   font-size: 14px;
-  font-weight: 700;
-  border-radius: 8px;
+  font-weight: 400;
+  border-radius: 16px;
+  border: 1px;
+  color: #fff;
 }
 
 .button__contained {
   background: var(--primary-main);
-  color: var(--text-light);
+  color: var(--text-dark);
   transition: background ease 0.5s;
   transition: color ease 0.5s;
 }
 
 .button__contained:hover {
-  background: var(--primary-bg-light);
-  color: var(--primary-main);
+  background: var(--primary-light);
+  color: var(--text-light);
 }
 
 .button__contained--disabled {
-  background: var(--primary-bg-light);
-  color: var(--primary-main);
+  background: var(--primary-light);
 }
 
 .button__outlined {
@@ -90,16 +90,22 @@ button {
   border: 1px solid var(--text-light);
   transition: background ease 0.5s;
   transition: color ease 0.5s;
+  transition: border ease 0.5s;
 }
 
 .button__outlined:hover {
-  background: var(--primary-bg-light);
+  background: var(--primary-light);
   color: var(--secondary-light);
+  border: 1px solid var(--primary-light);
 }
 
 .main {
   width: 100%;
   padding: 0px 20px;
+}
+
+.main--blur {
+  filter: blur(4px);
 }
 
 .text__primary {
@@ -111,13 +117,18 @@ button {
   color: var(--primary-dark);
 }
 
-@media (max-width: 676px) {
+@media (max-width: 768px) {
+  /*   body {
+    height: 100%;
+    overflow-y: scroll;
+  } */
   .main {
-    padding: 0px 10px 80px 10px;
+    padding: 0px 10px 20px 10px;
   }
 
   section {
-    height: 100%;
+    height: auto;
+    padding-top: 60px;
   }
 
   .button {

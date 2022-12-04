@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     "I'm Frontend developer!",
     "I'm Backend developer!",
     "I'm Javascript developer!",
-    "I'm Fullstack developer!",
+    "I'm Full stack developer!",
   ];
 
   // type one text in the typwriter

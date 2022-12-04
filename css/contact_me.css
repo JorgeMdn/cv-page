@@ -2,6 +2,10 @@
   height: 90vh;
 }
 
+.contact__message {
+  font-weight: 500;
+}
+
 .form__group {
   padding-top: 20px;
 }
@@ -16,20 +20,21 @@
   margin: 10px 0;
   width: 100%;
   padding: 10px;
-  background: var(--secondary-light);
+  background: var(--primary-light);
   border: none;
   height: 40px;
   color: var(--text-light);
   border-radius: 8px;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .form__group input:focus,
 textarea:focus {
   /* outline: 1px solid var(--text-light); */
   outline: none !important;
-  border-color: var(--text-light);
-  box-shadow: 0 0 10px var(--text-light);
+  border: 1px solid var(--text-light);
+  /* box-shadow: 0 0 5px var(--text-light); */
 }
 
 .form__group input::placeholder {
@@ -42,11 +47,12 @@ textarea:focus {
   max-width: 100%;
   width: 100%;
   padding: 10px;
-  background: var(--secondary-light);
+  background: var(--primary-light);
   border: none;
   color: var(--text-light);
   border-radius: 8px;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .form__group textarea::placeholder {
@@ -62,8 +68,8 @@ textarea:focus {
   display: block;
 }
 
-@media (max-width: 667px) {
+@media (max-width: 768px) {
   .contact_me {
-    height: 100vh;
+    height: auto;
   }
 }

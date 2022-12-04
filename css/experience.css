@@ -1,10 +1,10 @@
 .blast {
   font-weight: 700;
   font-size: 4rem;
-  line-height: 4rem;
   letter-spacing: -1px;
   display: flex;
   flex-wrap: wrap;
+  color: var(--primary-main);
 }
 
 .blast__item {
@@ -31,10 +31,13 @@
 
 .job__content {
   width: 100%;
+  height: 100%;
+  padding: 20px 0px;
 }
 
 .job__item {
-  background: var(--secondary-light);
+  height: 100%;
+  background: var(--primary-light);
   padding: 20px;
   /* border-radius: 18px; */
   margin: 10px 0;
@@ -53,10 +56,11 @@
 .job__date {
   text-transform: uppercase;
   font-size: 14px;
+  padding-top: 5px;
 }
 
 .job__description {
-  padding-top: 10px;
+  padding-top: 5px;
   font-size: 16px;
   font-weight: 600;
 }
@@ -65,6 +69,7 @@
   display: inline-block;
   position: relative;
   color: var(--primary-main);
+  font-weight: 600;
 }
 
 .skills__link:after {
@@ -135,9 +140,30 @@
   background-color: #08fdd8;
 }
 
-@media (max-width: 676px) {
+.skill__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0 10px;
+  list-style: none;
+  padding: 0px;
+}
+
+.skill__item {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.skill__item::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: var(--primary-main);
+}
+
+@media (max-width: 768px) {
   .blast {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     justify-content: center;
   }
 

@@ -1,9 +1,9 @@
 :root {
-  --primary-bg-light: white;
-  --primary-bg-dark: #010312;
-  --primary-main: #f26c4f;
-  --primary-dark: #df4727;
-  --primary-light: white;
+  --primary-bg-light: #f1faee;
+  --primary-bg-dark: #f1faee;
+  --primary-main: #219ebc;
+  --primary-dark: #023047;
+  --primary-light: #8ecae6;
   --secondary-main: #010312;
   --secondary-light: #0c123e;
   /* --secondary-light: white;
@@ -14,6 +14,6 @@
   --danger-light: white;
   --warning-main: white;
   --warning-light: white; */
-  --text-light: white;
-  --text-dark: #010312;
+  --text-light: black;
+  --text-dark: white;
 }

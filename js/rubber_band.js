@@ -1,6 +1,6 @@
 const blastItemList = document.querySelectorAll(".blast__item");
 const bannerTitle = document.querySelector(".banner__title");
-console.log(bannerTitle);
+
 blastItemList.forEach((blast) => {
   blast.addEventListener("mouseenter", () => {
     blast.classList.add("blast__item--animation");
