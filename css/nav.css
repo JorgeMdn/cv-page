@@ -68,7 +68,7 @@
 .nav__mobile__button {
   display: none;
   margin-left: auto;
-  color: var(--secondary-main);
+  position: relative;
 }
 
 .nav__mobile__button:focus:not(:focus-visible) {
@@ -81,7 +81,6 @@
   height: 50px;
   padding: 10px;
   position: absolute;
-  padding: 10px;
   top: 10px;
   left: 35px;
   background-color: var(--primary-main);
@@ -108,7 +107,7 @@
   }
 
   .nav__mobile__button {
-    display: block;
+    display: none;
   }
 
   .nav__list {
