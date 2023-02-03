@@ -1,0 +1,182 @@
+.blast {
+  font-weight: 700;
+  font-size: 4rem;
+  letter-spacing: -1px;
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--primary-main);
+}
+
+.blast__item {
+  display: inline-block;
+  animation-duration: 0.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  transition: color ease 0.5s;
+  color: var(--primary-main);
+}
+
+.blast__item--space {
+  width: 10px;
+}
+
+.blast__item--animation {
+  animation-name: rubberBand;
+  color: var(--text-light);
+}
+
+.skills__description {
+  font-weight: 500;
+}
+
+.job__content {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0px;
+}
+
+.job__item {
+  height: 100%;
+  background: var(--primary-light);
+  padding: 20px;
+  /* border-radius: 18px; */
+  margin: 10px 0;
+}
+
+.job__title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.job__business {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.job__date {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+.job__description {
+  padding-top: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.skills__link {
+  display: inline-block;
+  position: relative;
+  color: var(--primary-main);
+  font-weight: 600;
+}
+
+.skills__link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-main);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.skills__link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.skills__content {
+  padding-bottom: 20px;
+}
+
+.skills__info {
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.skills__item {
+  width: 100%;
+  height: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.skills__bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.521);
+  border-radius: 2px;
+}
+
+.skills__fill {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  margin: 10px 0;
+}
+
+.skills__fill--frontend {
+  width: 95%;
+  background-color: rgb(255, 38, 38);
+}
+
+.skills__fill--backend {
+  width: 60%;
+  background-color: green;
+}
+
+.skills__fill--angular {
+  width: 90%;
+  background-color: rgb(255, 34, 83);
+}
+
+.skills__fill--react {
+  width: 60%;
+  background-color: #08fdd8;
+}
+
+.skill__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0 10px;
+  list-style: none;
+  padding: 0px;
+}
+
+.skill__item {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.skill__item::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: var(--primary-main);
+}
+
+@media (max-width: 768px) {
+  .blast {
+    font-size: 2.5rem;
+    justify-content: center;
+  }
+
+  .job__content {
+    display: block;
+  }
+
+  .job__item {
+    width: 100%;
+  }
+
+  .job__business,
+  .job__date {
+    text-align: center;
+  }
+}

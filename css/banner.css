@@ -1,0 +1,208 @@
+@import "./variables.css";
+
+.banner {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__icon {
+  position: relative;
+  color: var(--text-light);
+  top: 0;
+  transition: top ease 0.5s;
+  font-size: 35px;
+  padding: 0px 10px;
+}
+
+.banner__icon:hover {
+  color: var(--primary-main);
+  top: -5px;
+}
+
+.banner__title {
+  width: 100%;
+  font-size: 48px;
+  text-align: center;
+  color: var(--text-light);
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+.banner__title--animation {
+  animation-name: rubberBand;
+}
+
+.banner__name {
+  color: var(--primary-main);
+}
+
+.banner__description {
+  color: var(--text-light);
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* BANNER__TYPING START */
+
+.banner__writter {
+  display: flex;
+  justify-content: center;
+}
+
+.banner__wrapper {
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  color: #fff;
+  box-sizing: border-box;
+  /* max-width: 300px; */
+  min-width: 80px;
+  min-height: 38px;
+}
+
+.banner__wrapper:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--text-light);
+  border-radius: 2px;
+  box-sizing: border-box;
+  clip-path: polygon(
+    0% 105%,
+    0% 0%,
+    105% 0%,
+    105% 105%,
+    43px 105%,
+    43px 80%,
+    21px 80%,
+    21px 105%
+  );
+}
+.banner__wrapper:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 20px;
+  background: var(--text-light);
+  top: calc(100% - 1px);
+  left: 20px;
+  box-sizing: border-box;
+  clip-path: polygon(
+    0 0,
+    0% 100%,
+    100% 0%,
+    calc(100% - 2px) 0,
+    1px calc(100% - 2px),
+    1px 0
+  );
+}
+
+.banner__typing {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.banner__type {
+  border-right: 0.05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+/* BANNER__TYPING END */
+
+.banner_arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.banner_arrow-icon {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  background: var(--primary-main);
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top ease 4s;
+  animation-duration: 4s;
+  animation-name: banner__change_position;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.banner_arrow-icon:hover {
+  background: var(--primary-light);
+  color: var(--secondary-main);
+  transition: background ease 0.5s;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .banner__icon {
+    font-size: 30px;
+  }
+
+  .banner__title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner__typing {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .banner__wrapper {
+    width: 100%;
+  }
+
+  .banner__description {
+    text-align: center;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes banner__change_position {
+  50% {
+    bottom: -30px;
+  }
+}
