@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   // array with texts to type in typewriter
   var dataText = [
+    "I'm Software Engineer!",
     "I'm Frontend developer!",
     "I'm Backend developer!",
-    "I'm Javascript developer!",
+    "I'm JavaScript developer!",
     "I'm Full stack developer!",
   ];
 

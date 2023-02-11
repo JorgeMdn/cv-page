@@ -3,6 +3,7 @@ const menuButtonInput = document.querySelector(".nav__mobile_input");
 const nav = document.querySelector(".nav__list");
 const main = document.querySelector(".main");
 const navItemList = document.querySelectorAll(".nav__item");
+const navBrand = document.querySelector(".nav__brand");
 
 function resetMobileMenu() {
   nav.classList.remove("nav__list--opened");
@@ -27,6 +28,18 @@ navItemList.forEach((item) => {
 window.addEventListener("resize", function () {
   const width = document.body.clientWidth;
 
+  if (width > 900 && main.classList.contains("main--blur")) {
+    main.classList.remove("main--blur");
+    return;
+  }
+
+  if (width < 900) {
+    resetMobileMenu();
+  }
+});
+
+navBrand.addEventListener("click", () => {
+  const width = document.body.clientWidth;
   if (width > 900 && main.classList.contains("main--blur")) {
     main.classList.remove("main--blur");
     return;
