@@ -1,3 +1,4 @@
-# Personal website
+# Welcome to My Personal Website
 
-This is my personal website, know a little about me, my experience and skills.
+Hello there! Welcome to my personal website's repository. 
+This is where I showcase my skills, experiences, projects, and everything that defines me professionally, see [here](https://jorgemdn.com/). 

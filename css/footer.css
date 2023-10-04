@@ -1,25 +1,26 @@
-@import "variables.css";
+@import "./variables.css";
 
 footer {
+  border-top: none;
   min-height: 40px;
   /* height: 40px; */
   /* max-height: 80px; */
-  background: var(--primary-light);
+  background: var(--primary-main);
   color: var(--text-light);
   font-weight: 600;
-  font-size: 16px;
+  font-size: var(--font-size-xsmall);
   padding: 20px 10px;
 }
 
 .footer__media {
-  font-size: 24px;
+  font-size: var(--font-size-medium);
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 .footer__icon:hover {
-  color: var(--primary-main);
+  color: var(--color-black);
 }
 
 @media (max-width: 768px) {

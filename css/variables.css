@@ -1,21 +1,43 @@
 :root {
-  --primary-bg-light: #f1faee;
-  --primary-main: #219ebc;
+  --primary-bg-light: #023047;
+  --primary-main: #ff6300;
+  --primary-main-dark: #ba4700;
+  --primary-light: #183d3d;
   --primary-dark: #023047;
-  --primary-light: #8ecae6;
   --secondary-main: #010312;
-  --secondary-light: #0c123e;
-  --text-light: black;
-  --text-dark: white;
-}
-
-[data-theme="dark"] {
-  --primary-bg-light: #444444;
-  --primary-dark: #219ebc;
-  --primary-light: #023047;
-  --primary-main: #8ecae6;
-  --secondary-light: #010312;
-  --secondary-main: #0c123e;
+  --secondary-light: hsl(233, 68%, 15%);
   --text-light: white;
   --text-dark: black;
+  --color-white: white;
+  --color-black: black;
+
+  /* Layout */
+  --xs: 320px;
+  --s: 576px;
+  --m: 768px;
+  --l: 992px;
+  --xl: 1200px;
+  --xxl: 1400px;
+
+  /* Paddings */
+  --padding-x-small: 8px;
+  --padding-small: 16px;
+  --padding-medium: 24px;
+  --padding-large: 48px;
+  --padding-extra-large: 60px;
+
+  /* Typography */
+  --font-primary: "Montserrat", "Arial", "san-serif";
+  --font-size-xsmall: 1.6rem;
+  --font-size-small: 2rem;
+  --font-size-medium: 3rem;
+  --font-size-large: 3.5rem;
+  --font-size-extra-large: 4.5rem;
+  --font-size-xxl: 6.5rem;
+
+  --line-height-xsmall: calc(1.6rem * 1.25rem);
+  --line-height-small: calc(2rem * 1.25rem);
+  --line-height-medium: calc(3rem * 1.25rem);
+  --line-height-large: calc(3.5rem * 1.25rem);
+  --line-height-extra-large: calc(4.5rem * 1.25rem);
 }

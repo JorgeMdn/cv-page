@@ -1,9 +1,25 @@
 .contact_me {
-  height: 90vh;
+  min-height: 600px;
+  width: 100%;
+  background-image: url("../assets/icons/waves_up.svg");
+  background-position: bottom;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 .contact__message {
   font-weight: 500;
+}
+
+.contact__btn {
+  border: 1px solid var(--color-black);
+}
+
+.contact__btn span {
+  font-size: 14px;
+  vertical-align: unset;
 }
 
 .form__group {
@@ -25,7 +41,7 @@
   height: 40px;
   color: var(--text-light);
   border-radius: 8px;
-  font-size: 14px;
+  font-size: var(--font-size-xsmall);
   font-weight: 500;
 }
 
@@ -51,7 +67,7 @@ textarea:focus {
   border: none;
   color: var(--text-light);
   border-radius: 8px;
-  font-size: 14px;
+  font-size: var(--font-size-xsmall);
   font-weight: 500;
 }
 
@@ -71,5 +87,6 @@ textarea:focus {
 @media (max-width: 768px) {
   .contact_me {
     height: auto;
+    padding-bottom: 60px;
   }
 }
