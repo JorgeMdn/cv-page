@@ -4,3 +4,5 @@
 
 const element = document.getElementById("banner");
 element.scrollIntoView();
+
+//goToSection("skills");

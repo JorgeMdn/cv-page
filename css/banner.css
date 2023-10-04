@@ -1,12 +1,18 @@
 @import "./variables.css";
 
 .banner {
-  width: 100%;
-  margin: 0;
-  position: relative;
+  min-width: 320px;
+  min-height: 90vh;
+  height: 100vh;
+  padding-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(rgb(4, 13, 18, 1), rgba(0, 0, 0, 0.6)),
+    url("../assets/images/bg_bannner_640x424.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .banner__actions {
@@ -26,7 +32,7 @@
   color: var(--text-light);
   top: 0;
   transition: top ease 0.5s;
-  font-size: 35px;
+  font-size: var(--font-size-large);
   padding: 0px 10px;
 }
 
@@ -37,7 +43,7 @@
 
 .banner__title {
   width: 100%;
-  font-size: 48px;
+  font-size: var(--font-size-xxl);
   text-align: center;
   color: var(--text-light);
   animation-duration: 1s;
@@ -48,14 +54,19 @@
   animation-name: rubberBand;
 }
 
-.banner__name {
+.banner__proffesion {
+  font-size: var(--font-size-extra-large);
   color: var(--primary-main);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 0px;
 }
 
-.banner__description {
+.banner__description p {
   color: var(--text-light);
-  font-size: 24px;
+  font-size: var(--font-size-small);
   font-weight: 600;
+  line-height: var(--line-height-extra-large);
   text-align: center;
 }
 
@@ -120,7 +131,7 @@
 }
 
 .banner__typing {
-  font-size: 24px;
+  font-size: var(--font-size-medium);
   font-weight: 500;
   color: var(--text-light);
 }
@@ -144,10 +155,10 @@
   padding: 10px;
   position: relative;
   bottom: 0;
-  background: var(--primary-main);
-  color: white;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  border-radius: 100px;
   font-weight: 600;
-  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,9 +170,17 @@
 }
 
 .banner_arrow-icon:hover {
-  background: var(--primary-light);
-  color: var(--secondary-main);
+  color: var(--color-white);
+  background: var(--primary-main);
+  border: 1px solid var(--primary-main);
   transition: background ease 0.5s;
+}
+
+@media (min-width: 1500px) {
+  .banner {
+    min-height: 600px;
+    max-height: 600px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -172,16 +191,20 @@
   }
 
   .banner__icon {
-    font-size: 30px;
+    font-size: var(--font-size-medium);
   }
 
   .banner__title {
     width: 100%;
-    text-align: center;
+    font-size: var(--font-size-large);
+  }
+
+  .banner__proffesion {
+    font-size: var(--font-size-large);
   }
 
   .banner__typing {
-    font-size: 16px;
+    font-size: var(--font-size-xsmall);
     font-weight: 600;
     text-align: center;
   }

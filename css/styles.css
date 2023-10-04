@@ -1,5 +1,17 @@
 @import "./variables.css";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-primary);
+  font-display: swap;
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -9,10 +21,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", "Arial", "san-serif";
-  background: var(--primary-bg-light);
-  color: var(--text-light);
-  font-display: swap;
+  background: var(--color-white);
+  color: var(--color-black);
 }
 
 a {
@@ -35,9 +45,9 @@ ul {
 
 section {
   margin: 0;
-  min-height: 90vh;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 60px;
+  padding: var(--padding-extra-large);
 }
 
 p,
@@ -58,55 +68,61 @@ textarea {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: var(--font-size-large);
+}
+
+p {
+  font-size: var(--font-size-xsmall);
 }
 
 .button {
   display: block;
   padding: 10px 20px;
   margin: 20px 0;
-  font-size: 14px;
+  font-size: var(--font-size-xsmall);
   font-weight: 500;
-  border-radius: 16px;
+  border-radius: 24px;
   border: 1px;
   color: #fff;
   text-align: center;
+  min-width: 200px;
 }
 
 .button__contained {
-  background: var(--primary-main);
-  color: var(--text-dark);
+  /* background: var(--primary-main); */
+  color: var(--color-black);
+  font-weight: 500;
   transition: background ease 0.5s;
   transition: color ease 0.5s;
+  border: 1px solid var(--color-black);
 }
 
 .button__contained:hover {
-  background: var(--primary-light);
-  color: var(--text-light);
+  background: var(--primary-main);
+  color: var(--color-white);
 }
 
 .button__contained--disabled {
   background: var(--primary-light);
 }
 
+.button__contained--margin-right {
+  margin-right: 16px;
+}
+
 .button__outlined {
   background: transparent;
-  color: var(--text-light);
-  border: 1px solid var(--text-light);
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
   transition: background ease 0.5s;
   transition: color ease 0.5s;
   transition: border ease 0.5s;
 }
 
 .button__outlined:hover {
-  background: var(--primary-light);
-  color: var(--secondary-light);
-  border: 1px solid var(--primary-light);
-}
-
-.main {
-  width: 100%;
-  padding: 0px 20px;
+  background: var(--primary-main);
+  color: var(--color-white);
+  border: 1px solid var(--primary-main);
 }
 
 .main--blur {
@@ -123,10 +139,6 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .main {
-    padding: 0px 10px 20px 10px;
-  }
-
   section {
     height: auto;
     min-height: inherit;
@@ -146,7 +158,31 @@ h1 {
 }
 
 @media (max-width: 576px) {
-  .button {
-    width: 100%;
+  section {
+    height: auto;
+    min-height: inherit;
+    padding-top: 60px;
+    align-items: start;
+    padding: 60px 10px 0 10px;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 2000px) {
+  .main {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+  section {
+    min-height: 600px;
   }
 }
