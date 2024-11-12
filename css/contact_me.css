@@ -1,12 +1,19 @@
 .contact_me {
   min-height: 600px;
   width: 100%;
-  background-image: url("../assets/icons/waves_up.svg");
-  background-position: bottom;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-color: var(--color-white);
   color: var(--color-black);
+  position: relative;
+}
+
+.contact_me__bg {
+  bottom: -10px;
+  left: 0;
+  position: absolute;
+}
+
+.contact_me__content {
+  display: flex;
+  justify-content: center;
 }
 
 .contact__message {
@@ -87,6 +94,5 @@ textarea:focus {
 @media (max-width: 768px) {
   .contact_me {
     height: auto;
-    padding-bottom: 60px;
   }
 }

@@ -6,6 +6,7 @@
   height: 100vh;
   padding-top: 60px;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgb(4, 13, 18, 1), rgba(0, 0, 0, 0.6)),
@@ -13,6 +14,8 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 10;
+  padding: 60px 10px 60px 10px;
 }
 
 .banner__actions {
@@ -176,7 +179,7 @@
   transition: background ease 0.5s;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 2000px) {
   .banner {
     min-height: 600px;
     max-height: 600px;

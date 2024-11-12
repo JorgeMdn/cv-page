@@ -25,6 +25,11 @@ body {
   color: var(--color-black);
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -163,7 +168,6 @@ p {
     min-height: inherit;
     padding-top: 60px;
     align-items: start;
-    padding: 60px 10px 0 10px;
   }
 
   p,
@@ -179,10 +183,12 @@ p {
 
 @media (min-width: 2000px) {
   .main {
-    max-width: 2000px;
-    margin: 0 auto;
+    max-width: var(--xxl);
   }
+}
+
+@media (min-width: 900px) {
   section {
-    min-height: 600px;
+    min-height: auto;
   }
 }

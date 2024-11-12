@@ -1,11 +1,30 @@
 @import "./variables.css";
 
 .about {
-  background-image: url("../assets/icons/waves_down.svg");
+  /* background-image: url("../assets/icons/waves_down.svg");
   background-position: top;
   background-size: auto;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   min-height: 60vh;
+  position: relative;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.about__bg {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.about__content {
+  padding-top: 60px;
+  z-index: 2;
+  position: relative;
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .about__title {

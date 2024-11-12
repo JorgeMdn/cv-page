@@ -63,6 +63,7 @@
 }
 
 .job__item--divider {
+  padding-top: 20px;
   border-right: 1px solid var(--color-black);
 }
 
@@ -239,6 +240,7 @@
   .job__item--divider {
     border-right: none;
     border-bottom: 1px solid var(--color-black);
+    padding-bottom: 20px;
   }
 }
 
