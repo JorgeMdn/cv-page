@@ -147,6 +147,10 @@
 }
 
 @media (max-width: 768px) {
+  .about__content {
+    padding-top: 80px;
+  }
+
   .about__title {
     font-size: var(--font-size-large);
     justify-content: center;
