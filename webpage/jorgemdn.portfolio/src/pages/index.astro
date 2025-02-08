@@ -1,0 +1,31 @@
+---
+import About from "../components/about.astro";
+import ContactMe from "../components/contact_me.astro";
+import Experience from "../components/experience.astro";
+import Footer from "../components/footer.astro";
+import Header from "../components/header.astro";
+import Navbar from "../components/navbar.astro";
+import Layout from "../layouts/Layout.astro";
+
+/* import "../styles/styles.css";
+import "../styles/animations.css";
+import "../styles/nav.css";
+import "../styles/banner.css";
+import "../styles/about.css";
+import "../styles/technologies.css";
+import "../styles/experience.css";
+import "../styles/contact_me.css";
+import "../styles/footer.css";
+import "../styles/menu.css"; */
+---
+
+<Layout>
+  <div class="container-fluid main">
+    <Navbar />
+    <Header />
+    <About />
+    <Experience />
+    <ContactMe />
+  </div>
+  <Footer />
+</Layout>
