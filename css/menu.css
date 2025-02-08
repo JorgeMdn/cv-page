@@ -1,3 +1,5 @@
+@import "./variables.css";
+
 .nav__mobile_input {
   visibility: hidden;
 }
@@ -9,11 +11,13 @@
   width: 40px;
   height: 40px;
   transition: all 0.5s ease-in-out;
+  padding-top: 18px;
+  margin-right: 10px;
 }
 .nav__mobile_menu_hamburger {
   width: 20px;
   height: 2px;
-  background-color: var(--secondary-main);
+  background-color: var(--color-white);
   border-radius: 5px;
   z-index: 10;
   transition: all 0.5s ease;
@@ -25,7 +29,7 @@
   position: absolute;
   width: 20px;
   height: 2px;
-  background: var(--secondary-main);
+  background: var(--color-white);
   border-radius: 5px;
   transition: all 0.5s ease;
 }
@@ -48,7 +52,7 @@
   transform: rotate(-45deg) translate(35px, 35px);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .nav__mobile_menu_btn,
   .nav__mobile_menu_hamburger {
     display: none;

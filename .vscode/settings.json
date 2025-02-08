@@ -1,8 +1,8 @@
 {
   "files.autoSave": "onWindowChange",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": true
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
   },
   "editor.wordWrap": "wordWrapColumn",
   "[javascript]": {
