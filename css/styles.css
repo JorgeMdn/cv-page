@@ -192,3 +192,14 @@ p {
     min-height: auto;
   }
 }
+
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
+  section {
+    min-height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

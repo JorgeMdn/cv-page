@@ -7,8 +7,12 @@
 
 .contact_me__bg {
   bottom: -10px;
-  left: 0;
+  left: 50%;
   position: absolute;
+  width: 100%;
+  height: auto;
+  transform: translateX(-50%) scale(1.1);
+  object-fit: cover; /* Asegura que la imagen cubra sin distorsionarse */
 }
 
 .contact_me__content {
@@ -25,7 +29,7 @@
 }
 
 .contact__btn span {
-  font-size: 14px;
+  font-size: var(--font-size-xxsmall);
   vertical-align: unset;
 }
 
@@ -94,5 +98,6 @@ textarea:focus {
 @media (max-width: 768px) {
   .contact_me {
     height: auto;
+    width: 100%;
   }
 }

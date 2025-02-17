@@ -28,6 +28,7 @@
 
   /* Typography */
   --font-primary: "Montserrat", "Arial", "san-serif";
+  --font-size-xxsmall: 0.8rem;
   --font-size-xsmall: 1.6rem;
   --font-size-small: 2rem;
   --font-size-medium: 3rem;

@@ -1,6 +1,7 @@
 @import "./variables.css";
 
 .banner {
+  width: 100%;
   min-width: 320px;
   min-height: 90vh;
   height: 100vh;
@@ -188,6 +189,7 @@
 
 @media (max-width: 768px) {
   .banner {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -217,6 +219,7 @@
   }
 
   .banner__description {
+    width: 100%;
     text-align: center;
   }
 }

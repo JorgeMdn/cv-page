@@ -10,11 +10,14 @@
   padding-top: 0;
   padding-left: 0;
   padding-right: 0;
+  width: 100%;
 }
 
 .about__bg {
   width: 100%;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scale(1.1);
   z-index: 1;
 }
 
@@ -98,7 +101,7 @@
 }
 
 .about__btn-icon {
-  font-size: 14px;
+  font-size: var(--font-size-xxsmall);
   vertical-align: revert;
 }
 
@@ -149,6 +152,8 @@
 @media (max-width: 768px) {
   .about__content {
     padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .about__title {
