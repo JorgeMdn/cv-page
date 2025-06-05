@@ -1,91 +1,105 @@
 <!-- ABOUT_ME START -->
-<section class="row about" id="about">
-  <div class="col-md-6">
+<section class="about" id="about">
+  <img
+    src="./assets/icons/waves_down.svg"
+    alt="backgroud waves"
+    class="about__bg"
+  />
+  <div class="about__content">
     <div class="row">
-      <div class="col-md-12 d-flex justify-content-center">
-        <h2 class="blast" aria-label="About me">About me</h2>
-      </div>
-      <div class="col-md-12 d-flex align-items-center justify-content-center">
-        <div class="about__img-content">
-          <img
-            class="about__img"
-            src="/assets/images/jm__profile.jpg"
-            alt="Jorge Medina developer"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6 about__description">
-    <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-6">
         <div class="row">
-          <div class="col-md-12">
-            <h2>Hi I'm Jorge Medina!</h2>
+          <div class="col-md-12 d-flex justify-content-center">
+            <h2 class="about__title" aria-label="About me">About me</h2>
           </div>
-          <div class="col-md-12">
-            <p>
-              I'm a Full Stack developer based in Mèxico with a great passion
-              for web developer.
-            </p>
-          </div>
-          <div class="col-md-12">
-            <p>
-              Hard-working with a flair creating elegant solution in the least
-              amount of time. Developed websites, web applications with scalable
-              structure and good performance.
-            </p>
-            <p>
-              I use my passion and skills to create digital products and
-              experiences.
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="row metric">
-              <div class="col-md-4 metric__item">
-                <div class="metric__total">+3</div>
-                <div class="metric__title">Years of experience</div>
-              </div>
-              <div class="col-md-4 metric__item">
-                <div class="metric__total">+5</div>
-                <div class="metric__title">Built web applications</div>
-              </div>
-              <div class="col-md-4 metric__item">
-                <div class="metric__total">+7</div>
-                <div class="metric__title">Built websites</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 px-4">
-            <div class="row px-2">
-              <div class="col-md-12 about__divider"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 about__actions">
-          <a
-            class="button button__contained mr-2"
-            href="mailto:jorge.medina.dev@gmail.com"
+          <div
+            class="col-md-12 d-flex align-items-center justify-content-center"
           >
-            Contact me
-            <span class="d-inline-block pl-2"
-              ><i class="fa fa-arrow-right fa-lg"></i></span
-            >
-          </a>
-          <button class="button button__outlined" onclick="downloadCV()">
-            <span class="d-inline-block pr-2"
-              ><i class="fa fa-download fa-lg"></i></span
-            >
-            Download CV
-          </button>
+            <div class="about__img-content">
+              <img
+                class="about__img"
+                src="./assets/images/jm__profile.jpg"
+                alt="Jorge Medina developer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 about__description">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="about__greeting">Hi I'm Jorge Medina!</h2>
+              </div>
+              <div class="col-md-12">
+                <p>
+                  I'm a Full-stack developer based in Mexico with over three
+                  years of experience and a strong passion for web development
+                </p>
+              </div>
+              <div class="col-md-12">
+                <p>
+                  I'm hardworking and specialize in crafting elegant solutions
+                  in the most efficient manner. Throughout my career, I've
+                  successfully developed websites and web applications with
+                  scalable structures and optimal performance.
+                </p>
+                <p>
+                  I leverage my passion and skills to create exceptional digital
+                  products and deliver outstanding user experiences.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="metric">
+                  <div class="metric__item">
+                    <div class="metric__total">+3</div>
+                    <div class="metric__title">Years of experience</div>
+                  </div>
+                  <div class="metric__item">
+                    <div class="metric__total">+15</div>
+                    <div class="metric__title">Built web applications</div>
+                  </div>
+                  <div class="metric__item">
+                    <div class="metric__total">+7</div>
+                    <div class="metric__title">Built websites</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="about__divider"></div>
+              </div>
+            </div>
+            <div class="col-md-12 about__actions px-0">
+              <a
+                class="button button__contained"
+                href="mailto:jorge.medina.dev@gmail.com"
+              >
+                Contact me
+                <span class="d-inline-block pl-2 about__btn-icon"
+                  ><i class="fa fa-envelope fa-lg"></i></span
+                >
+              </a>
+              <a class="button button__contained" onclick="downloadCV()">
+                <span class="d-inline-block pr-2"
+                  ><i class="fa fa-download fa-lg"></i></span
+                >
+                Download CV
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- ABOUT_ME END -->
+
+<style>
+  @import "../styles/about.css";
+</style>

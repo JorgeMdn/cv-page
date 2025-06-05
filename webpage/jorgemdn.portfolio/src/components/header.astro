@@ -1,66 +1,114 @@
 <!-- BANNER START -->
-<section class="row banner pr-0" id="banner">
-  <div class="col-md-8 px-0">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="banner__title pt-4">
-          ¡Hi my name is <span class="banner__name">Jorge Medina!</span>
-        </h1>
-      </div>
-      <div class="col-md-12 pb-4 mb-4">
-        <div class="banner__writter">
-          <div class="banner__wrapper">
-            <div class="banner__typing" id="bannerTyping" translate="no">
-              Full stack developer
-            </div>
-          </div>
+<header class="banner" id="banner">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="banner__title pt-4 pb-0">Jorge Medina</h1>
+          <p class="banner__proffesion">Web developer</p>
         </div>
-      </div>
-      <div class="col-md-12 banner__description">
-        <p>
-          This is my personal website, know a little about me, my experience and
-          skills.
-        </p>
-      </div>
-      <div class="col-md-12 banner__actions">
-        <button class="button button__outlined mt-0" onclick="downloadCV()">
-          <span class="d-inline-block"
-            ><i class="fa fa-download fa-lg"></i></span
+        <div class="col-md-12 banner__description">
+          <p>
+            I'm a full-stack web developer, and this is my personal website. Get
+            to know a little about me, my experience, and skills.
+          </p>
+        </div>
+        <div class="col-md-12 banner__media">
+          <a
+            href="https://www.linkedin.com/in/jorgemdn"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-          Download CV
-        </button>
-      </div>
-      <div class="col-md-12 banner__media">
-        <a
-          href="https://www.linkedin.com/in/jorgemdn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa fa-linkedin-square fa-lg banner__icon"></i>
-        </a>
-        <a
-          href="https://github.com/JorgeMdn/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa fa-github-square fa-lg banner__icon"></i>
-        </a>
-        <a
-          href="https://twitter.com/jorge_mdn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa fa-twitter-square fa-lg banner__icon"></i>
-        </a>
-      </div>
-      <div class="col-md-12 banner_arrow pt-4">
-        <a href="#about">
-          <div class="banner_arrow-icon">
-            <i class="fa fa-arrow-down fa-lg"></i>
-          </div>
-        </a>
+            <i class="fa fa-linkedin-square fa-lg banner__icon"></i>
+          </a>
+          <a
+            href="https://github.com/JorgeMdn/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa fa-github-square fa-lg banner__icon"></i>
+          </a>
+          <a
+            href="https://twitter.com/jorge_mdn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa fa-twitter-square fa-lg banner__icon"></i>
+          </a>
+        </div>
+        <div class="col-md-12 banner_arrow pt-4">
+          <a href="#about">
+            <div class="banner_arrow-icon">
+              <i class="fa fa-arrow-down fa-lg"></i>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</section>
+</header>
 <!-- BANNER END -->
+
+<style>
+  @import "../styles/banner.css";
+</style>
+
+<script>
+  console.log("Banner component loaded");
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    // array with texts to type in typewriter
+    var dataText = [
+      "I'm Software Engineer!",
+      "I'm Frontend developer!",
+      "I'm Backend developer!",
+      "I'm JavaScript developer!",
+      "I'm Full stack developer!",
+    ];
+
+    // type one text in the typwriter
+    // keeps calling itself until the text is finished
+    function typeWriter(text: string, i: number, fnCallback: any) {
+      // chekc if text isn't finished yet
+      if (i < text.length) {
+        // add next character to h1
+        const bannerTyping = document.getElementById("bannerTyping");
+        if (!bannerTyping) {
+          return;
+        }
+
+        bannerTyping.innerHTML =
+          text.substring(0, i + 1) +
+          '<span class="banner__type" aria-hidden="true"></span>';
+
+        // wait for a while and call this function again for next character
+        setTimeout(function () {
+          typeWriter(text, i + 1, fnCallback);
+        }, 100);
+      }
+      // text finished, call callback if there is a callback function
+      else if (typeof fnCallback == "function") {
+        // call callback after timeout
+        setTimeout(fnCallback, 700);
+      }
+    }
+    // start a typewriter animation for a text in the dataText array
+    function StartTextAnimation(i: number) {
+      if (typeof dataText[i] == "undefined") {
+        setTimeout(function () {
+          StartTextAnimation(0);
+        }, 20000);
+      }
+      // check if dataText[i] exists
+      if (dataText[i]) {
+        // text exists! start typewriter animation
+        typeWriter(dataText[i], 0, function () {
+          // after callback (and whole text has been animated), start next text
+          StartTextAnimation(i + 1);
+        });
+      }
+    }
+    // start the text animation
+    StartTextAnimation(0);
+  });
+</script>

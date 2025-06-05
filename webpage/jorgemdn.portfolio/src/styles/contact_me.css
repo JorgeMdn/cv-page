@@ -1,9 +1,32 @@
 .contact_me {
-  height: 90vh;
+  min-height: 600px;
+  width: 100%;
+  color: var(--color-black);
+  position: relative;
+}
+
+.contact_me__bg {
+  bottom: -10px;
+  left: 0;
+  position: absolute;
+}
+
+.contact_me__content {
+  display: flex;
+  justify-content: center;
 }
 
 .contact__message {
   font-weight: 500;
+}
+
+.contact__btn {
+  border: 1px solid var(--color-black);
+}
+
+.contact__btn span {
+  font-size: var(--font-size-xxsmall);
+  vertical-align: unset;
 }
 
 .form__group {
@@ -25,7 +48,7 @@
   height: 40px;
   color: var(--text-light);
   border-radius: 8px;
-  font-size: 14px;
+  font-size: var(--font-size-xsmall);
   font-weight: 500;
 }
 
@@ -51,7 +74,7 @@ textarea:focus {
   border: none;
   color: var(--text-light);
   border-radius: 8px;
-  font-size: 14px;
+  font-size: var(--font-size-xsmall);
   font-weight: 500;
 }
 
